@@ -1,0 +1,33 @@
+{
+  "name": "base64-streaming-proxy",
+  "version": "0.0.1",
+  "description": "Stream remote content as a base64-encoded text files",
+  "main": "lib/server.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "start": "node lib/server.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.7.2",
+    "husky": "^3.0.4",
+    "lint-staged": "^9.2.4",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,md,ts,yml}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
