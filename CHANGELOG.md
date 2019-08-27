@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/evanchiu/base64-streaming-proxy/compare/v1.0.0...v1.1.0) (2019-08-27)
+
+
+### Features
+
+* consumable module ([41b21b9](https://github.com/evanchiu/base64-streaming-proxy/commit/41b21b9))
+
 # 1.0.0 (2019-08-27)
 
 
