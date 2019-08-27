@@ -7,9 +7,8 @@ Encode multiples of [3 bytes at a time](https://stackoverflow.com/questions/7920
 ## Run as a server
 
 ```
-npm install
-npm run build
-npm start
+npm install -g base64-streaming-proxy
+b64proxy
 ```
 
 ## Use the proxy function in your server
