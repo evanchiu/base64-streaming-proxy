@@ -11,3 +11,15 @@ npm install
 npm run build
 npm start
 ```
+
+## Use the proxy function in your server
+
+```
+npm install base64-streaming-proxy
+```
+
+```
+const proxy = require("base64-streaming-proxy");
+const server = http.createServer(proxy);
+server.listen(port);
+```
