@@ -22,16 +22,16 @@
     "b64proxy": "./lib/server.js"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.1.0",
-    "@commitlint/config-conventional": "^8.1.0",
-    "@semantic-release/changelog": "^3.0.4",
-    "@semantic-release/git": "^7.0.16",
-    "@types/node": "^12.7.2",
-    "husky": "^3.0.4",
-    "lint-staged": "^9.2.4",
-    "prettier": "^1.18.2",
-    "semantic-release": "^15.13.24",
-    "typescript": "^3.5.3"
+    "@commitlint/cli": "8.1.0",
+    "@commitlint/config-conventional": "8.1.0",
+    "@semantic-release/changelog": "3.0.4",
+    "@semantic-release/git": "7.0.16",
+    "@types/node": "12.7.2",
+    "husky": "3.0.4",
+    "lint-staged": "9.2.4",
+    "prettier": "1.18.2",
+    "semantic-release": "15.13.24",
+    "typescript": "3.5.3"
   },
   "commitlint": {
     "extends": [
