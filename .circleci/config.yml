@@ -13,8 +13,16 @@ jobs:
       - image: circleci/node:12
     steps:
       - checkout
-      - run: npm ci 
+      - run: npm ci
       - run: npm run build
+
+  prettier:
+    docker:
+      - image: circleci/node:12
+    steps:
+      - checkout
+      - run: npm ci
+      - run: npm run prettier:check
 
   release:
     docker:
@@ -26,7 +34,8 @@ jobs:
       GIT_COMMITTER_NAME: Evbot 🤖🚀
     steps:
       - checkout
-      - run: npm ci 
+      - run: npm ci
+      - run: npm run build
       - run: npx semantic-release
 
 workflows:
@@ -36,7 +45,9 @@ workflows:
     jobs:
       - test_node_10
       - test_node_12
+      - prettier
       - release:
           requires:
             - test_node_10
             - test_node_12
+            - prettier

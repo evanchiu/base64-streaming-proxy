@@ -13,6 +13,7 @@
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
+    "prettier:check": "prettier --check *.{js,json,md,ts,yml}",
     "start": "node lib/server.js"
   },
   "files": [
