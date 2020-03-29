@@ -2,7 +2,7 @@ import http from "http";
 import https from "https";
 import url from "url";
 
-export default function(
+export default function (
   clientReq: http.IncomingMessage,
   clientRes: http.ServerResponse
 ) {
@@ -12,10 +12,10 @@ export default function(
       const lib = parsedUrl.query.target.startsWith("https") ? https : http;
       console.log(parsedUrl.query.target);
       lib
-        .get(parsedUrl.query.target, backendRes => {
+        .get(parsedUrl.query.target, (backendRes) => {
           let unsentBytes = "";
           clientRes.writeHead(200, { "content-type": "text/plain" });
-          backendRes.on("data", chunk => {
+          backendRes.on("data", (chunk) => {
             unsentBytes += chunk;
             const lengthToSend = Math.floor(unsentBytes.length / 3) * 3;
             const bytesToSend = unsentBytes.slice(0, lengthToSend);
@@ -30,7 +30,7 @@ export default function(
             console.log(`  Sent final ${unsentBytes.length} bytes`);
           });
         })
-        .on("error", err => {
+        .on("error", (err) => {
           console.error("  Backend Error", err);
           clientRes.writeHead(502, { "content-type": "text/plain" });
           clientRes.end("502: Backend error");
