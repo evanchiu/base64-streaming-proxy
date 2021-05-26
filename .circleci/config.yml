@@ -2,7 +2,7 @@ version: 2
 jobs:
   test_node_10:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:15
     steps:
       - checkout
       - run: npm ci
@@ -10,7 +10,7 @@ jobs:
 
   test_node_12:
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:15
     steps:
       - checkout
       - run: npm ci
@@ -18,7 +18,7 @@ jobs:
 
   prettier:
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:15
     steps:
       - checkout
       - run: npm ci
@@ -26,7 +26,7 @@ jobs:
 
   release:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:15
     environment:
       GIT_AUTHOR_EMAIL: evan@evanchiu.com
       GIT_AUTHOR_NAME: Evbot 🤖🚀
