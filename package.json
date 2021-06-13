@@ -1,6 +1,6 @@
 {
   "name": "base64-streaming-proxy",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Stream remote content as a base64-encoded text files",
   "author": "Evan Chiu <evan@evanchiu.com>",
   "homepage": "https://github.com/evanchiu/base64-streaming-proxy",

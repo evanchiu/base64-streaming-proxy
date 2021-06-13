@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/evanchiu/base64-streaming-proxy/compare/v1.2.0...v1.2.1) (2021-06-13)
+
+
+### Bug Fixes
+
+* **deps:** npm audit fix, npm update ([484e2aa](https://github.com/evanchiu/base64-streaming-proxy/commit/484e2aa724174b2fbad5e76e9e7908cc9bc5bb74))
+
 # [1.2.0](https://github.com/evanchiu/base64-streaming-proxy/compare/v1.1.0...v1.2.0) (2019-08-27)
 
 
