@@ -31,7 +31,7 @@
     "@types/node": "12.20.15",
     "husky": "4.3.8",
     "lint-staged": "10.5.4",
-    "prettier": "2.3.1",
+    "prettier": "2.3.2",
     "semantic-release": "17.4.4",
     "typescript": "4.3.4"
   },
